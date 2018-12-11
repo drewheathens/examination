@@ -4,6 +4,9 @@
 <head>
 
   <title>quiz-board</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -12,7 +15,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <h2><strong>Input your details below</strong></h2>
+    <!-- <h2><strong>Input your details below</strong></h2>
     <div class="well"id="blanks">
       <form id="personal-information">
         <div  class="form-group">
@@ -26,7 +29,7 @@
         <div>
           <label for="email">Enter your gmail acccount:</label><input type="email" id="email" pattern=".+@gmail.com" size="30" required>
         </div>
-    </div>
+    </div> -->
 
     <h3>QUESTIONS:</h3>
 
@@ -34,86 +37,86 @@
       <div class="well">
       <p>1) what is a mans' best friend?</p>
       <div>
-        <lebel><input type="radio" name="answer1" value="dog">dog</lebel>
+        <lebel><input type="radio" name="answer1" value="10">dog</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer1" value="cat">cat</lebel>
+        <lebel><input type="radio" name="answer1" value="0">cat</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer1" value="lion">lion</lebel>
+        <lebel><input type="radio" name="answer1" value="0">lion</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer1" value="warthog">warthog</lebel>
+        <lebel><input type="radio" name="answer1" value="0">warthog</lebel>
       </div>
       <p>2) who is king kaka?</p>
       <div>
 
-        <lebel><input type="radio" name="answer2" value="an-artist">an-artist</lebel>
+        <lebel><input type="radio" name="answer2" value="10">an-artist</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer2" value="thug">thug</lebel>
+        <lebel><input type="radio" name="answer2" value="0">thug</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer2" value="waiter">waiter</lebel>
+        <lebel><input type="radio" name="answer2" value="0">waiter</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer1" value="Tout">Tout</lebel>
+        <lebel><input type="radio" name="answer1" value="0">Tout</lebel>
       </div>
       <p>3) which conditional statement represents or?</p>
       <div>
-        <lebel><input type="radio" name="answer3" value="===">===</lebel>
+        <lebel><input type="radio" name="answer3" value="0">===</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer3" value="!==">!==</lebel>
+        <lebel><input type="radio" name="answer3" value="0">!==</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer3" value="||">||</lebel>
+        <lebel><input type="radio" name="answer3" value="10">||</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer3" value="and">and</lebel>
+        <lebel><input type="radio" name="answer3" value="0">and</lebel>
       </div>
-      <p>4) inside hich element do we pu the javascript?</p>
+      <p>4) inside hich element do we put the javascript?</p>
       <div>
-        <lebel><input type="radio" name="answer4" value="js">js</lebel>
-      </div>
-      <div>
-        <lebel><input type="radio" name="answer4" value="script">script</lebel>
+        <lebel><input type="radio" name="answer4" value="0">js</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer4" value="scripting">scripting</lebel>
+        <lebel><input type="radio" name="answer4" value="10">script</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer4" value="0">scripting</lebel>
       </div>
 
-      <p>5) how do we call an ID?</p>
+      <p>5) we call an ID using?</p>
       <div>
-        <lebel><input type="radio" name="answer5" value="#">#</lebel>
+        <lebel><input type="radio" name="answer5" value="10">#</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer5" value=".">.</lebel>
+        <lebel><input type="radio" name="answer5" value="0">.</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer5" value="come">come</lebel>
+        <lebel><input type="radio" name="answer5" value="0">come</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer5" value="||">||</lebel>
+        <lebel><input type="radio" name="answer5" value="0">||</lebel>
       </div>
       <p>6) how many letters does moringa have?</p>
       <div>
-        <lebel><input type="radio" name="answer6" value="4">4</lebel>
+        <lebel><input type="radio" name="answer6" value="0">4</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer6" value="7">7</lebel>
+        <lebel><input type="radio" name="answer6" value="10">7</lebel>
       </div>
       <div>
-        <lebel><input type="radio" name="answer6" value="10">10</lebel>
+        <lebel><input type="radio" name="answer6" value="0">10</lebel>
       </div>
     </div>
 
       <button type="submit" id="btn">submit</button>
     </form>
     <div>
-    <p id="totalResult">your got:</p>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <p id="totalResult"></p>
+    <!-- <span id result></span> -->
+
   </div>
 
 </body>
