@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    $("#btn").submit(function(event) {
+    $("#quiz-board").submit(function(event) {
     $("#totalResult").innerHTML('');
       var answers = ["dog", "an-artist", "||", "script", "#", "7"];
       var points = 10;
@@ -11,45 +11,47 @@ $(document).ready(function() {
           var answer4=document.querySelector('input[name="answer4"]:checked').value;
           var answer5=document.querySelector('input[name="answer5"]:checked').value;
           var answer6=document.querySelector('input[name="answer6"]:checked').value;
+          document.getElementById('#totalResult');
 
-          if(answer1===answers[0]) {
+          if(answer1==answers[0]) {
             scores += points;
           }
-          if(answer2===answers[1]) {
+          if(answer2==answers[1]) {
             scores += points;
           }
-          if(answer3===answers[2]) {
+          if(answer3==answers[2]) {
             scores += points;
           }
-          if(answer4===answers[3]) {
+          if(answer4==answers[3]) {
             scores += points;
           }
-          if(answer5===answers[4]) {
+          if(answer5==answers[4]) {
             scores += points;
           }
-          if(answer6===answers[5]) {
+          if(answer6==answers[5]) {
             scores += points;
           }
-          else {
-            alert("hey");
-          }
-      var add = function(points, scores){
-        return  ++ points;
+          $("#totalResult").show();
+        //   totalResult="score"
+        // console.log("score");
+          // else{
+          //   scores;
+          //   alert("hey you scored 0");
+          // }your score is
 
-      var totalResult= add;
-
-      document.getElementById("after submit").style.visibility ="visible";
-      document.getElementById("totalResult").innerHTML ="You got " + points + "%";
-
-      $("#quiz-board").hide();
-      $("#totalResult").show();
-
-
-        };
-
-
-        event.preventDefault();
-
+          // <p id=displayText> <p>
+          // <script type="text/javascript">
+          // function doSomeThing()
+          // {
+          //   //do something
+          //   document.getElementById("displayText").innerHTML=text1;
+          //   //do something
+          //   document.getElementById("displayText").innerHTML=text2;
+          //   //do something
+          //   document.getElementById("displayText").innerHTML=text3;
+          // }
+          // </script
+          event.preventDefault();
 
     });
-    });
+  });

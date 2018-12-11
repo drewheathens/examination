@@ -10,3 +10,24 @@
 #class{
   width: 100px;
 }
+h1{
+  text-align: justify;
+  text-decoration: underline;
+  text-indent: inherit;
+  text-emphasis-style: filled;
+}
+h2{
+  text-align: justify;
+  font-style: oblique;text-decoration: underline;
+}
+body{
+  background color: gray;
+  font-family: cursive;
+  font-weight: bolder;
+  font-style: italic;
+}
+h3{
+  text-decoration: inherit;
+  text-shadow;
+  text-decoration-style: wavy;
+}

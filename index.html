@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <h2><strong>Input your details below</strong></h2>
-    <div id="blanks">
+    <div class="well"id="blanks">
       <form id="personal-information">
-        <div class="form-group">
+        <div  class="form-group">
           <label for="text">first name:</label><input type="text" id="first-name" class="form-control" minlength="3" maxlength=10 size="20" required>
         </div>
         <label for="text">second name</label>
@@ -28,9 +28,10 @@
         </div>
     </div>
 
-    <h3>QUESTIONS</h3>
+    <h3>QUESTIONS:</h3>
 
     <form id="quiz-board" method="post" action="">
+      <div class="well">
       <p>1) what is a mans' best friend?</p>
       <div>
         <lebel><input type="radio" name="answer1" value="dog">dog</lebel>
@@ -46,6 +47,7 @@
       </div>
       <p>2) who is king kaka?</p>
       <div>
+
         <lebel><input type="radio" name="answer2" value="an-artist">an-artist</lebel>
       </div>
       <div>
@@ -104,11 +106,12 @@
       <div>
         <lebel><input type="radio" name="answer6" value="10">10</lebel>
       </div>
+    </div>
 
       <button type="submit" id="btn">submit</button>
     </form>
-    <div id="after submit">
-    <p id="totalResult">your score is</p>
+    <div>
+    <p id="totalResult">your got:</p>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </div>
