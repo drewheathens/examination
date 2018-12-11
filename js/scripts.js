@@ -72,8 +72,9 @@ $(document).ready(function() {
     var totalResult = parseInt(answer1) + parseInt(answer2) + parseInt(answer3) + parseInt(answer4) + parseInt(answer5) + parseInt(answer6);
 
     $("#totalResult").text("Your score is "+ totalResult);
-
-      $("#totalResult").show();
+      $("form#quiz-board").fadeOut();
+      $("hi").show();
+      $("#totalResult").toggle();
       event.preventDefault();
   });
 });

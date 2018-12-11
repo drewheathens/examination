@@ -1,6 +1,12 @@
-/* #totalResult{
+#totalResult{
   display: none;
-} */
+}
+#hi{
+  display: none;
+}
+#hey{
+  display: none;
+}
 #second-name{
   width: 400px;
 }
@@ -25,6 +31,7 @@ body{
   font-family: cursive;
   font-weight: bolder;
   font-style: italic;
+  background-image: src="img/image.jpeg";
 }
 h3{
   text-decoration: inherit;
