@@ -1,122 +1,118 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-<title>quiz board</title>
+
+  <title>quiz-board</title>
 </head>
 
 <body>
   <div class="container">
-    <h1><strong>QUIZ BOARD</strong></h1>
+    <h1>QUIZ BOARD</h1>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
     <h2><strong>Input your details below</strong></h2>
     <div id="blanks">
-      <form id="quiz board">
+      <form id="personal-information">
         <div class="form-group">
           <label for="text">first name:</label><input type="text" id="first-name" class="form-control" minlength="3" maxlength=10 size="20" required>
         </div>
         <label for="text">second name</label>
         <input type="text" id="second-name" class="form-control" minlength="3" maxlength="10" size="20" required>
-   <div>
-    <label for="text">class:</label><input type="text" id="class" class="form-control" minlength="2" maxlength="6" size="20" required>
-  </div>
-  <div>
-  <label for="email">Enter your gmail acccount:</label><input type="email" id="email" pattern=".+@gmail.com" size="30" required>
-  </div>
-</div>
-
-  <h3><strong>QUESTIONS</strong></h3>
-
-    <form>
-      <ol>
-        <p><strong>1) what is a mans' best friend?</strong></p>
-        <div class="radio">
-          <lebel>
-            <input type="radio" name="answer1"value="dog">dog</lebel>
-            <div class="radio">
-              <lebel>
-                <input type="radio" name="answer1"value="cat">cat</lebel>
-                <div class="radio">
-                  <lebel>
-                    <input type="radio" name="answer1"value="lion">lion</lebel>
-                    <div class="radio">
-                      <lebel>
-                        <input type="radio" name="answer1"value="warthog">warthog</lebel>
-
+        <div>
+          <label for="text">class:</label><input type="text" id="class" class="form-control" minlength="2" maxlength="6" size="20" required>
         </div>
-        <p><strong>2) who is king kaka?<strong></p>
-        <div class="radio">
-          <lebel>
-            <input type="radio" name="answer2"value="artist">artist</lebel>
-            <div class="radio">
-              <lebel>
-                <input type="radio" name="answer2"value="thug">thug</lebel>
-                <div class="radio">
-                  <lebel>
-                    <input type="radio" name="answer2"value="waiter">waiter</lebel>
-                    <div class="radio">
-                      <lebel>
-                        <input type="radio" name="answer1"value="Tout">Tout</lebel>
-                      </div>
-        <p><strong>3) which conditional statement represents or?</strong></p>
-        <div class="radio">
-          <lebel>
-            <input type="radio" name="answer3"value="===">===</lebel>
-            <div class="radio">
-              <lebel>
-                <input type="radio" name="answer3"value="!==">!==</lebel>
-                <div class="radio">
-                  <lebel>
-                    <input type="radio" name="answer3"value="||">||</lebel>
-                    <div class="radio">
-                      <lebel>
-                        <input type="radio" name="answer3"value="and">"and"</lebel>
-                      </div>
-        <p><strong>4) inside hich element do we pu the javascript?<strong></p>
-        <div class="radio">
-          <lebel>
-            <input type="radio" name="answer4"value="<js>"><js>
-              <div class="radio">
-                <lebel>
-                  <input type="radio" name="answer4"value="<script>"> <"script"> </lebel>
-                  <div class="radio">
-                    <lebel>
-                      <input type="radio" name="answer4"value="<scripting"><scripting</lebel>
-                      </div>
-        <p><strong>5) how do we call an ID?</strong></p>
-        <div class="radio">
-          <lebel>
-            <input type="radio" name="answer5"value="#">"#"</lebel>
-            <div class="radio">
-              <lebel>
-                <input type="radio" name="answer5"value=".">.</lebel>
-                <div class="radio">
-                  <lebel>
-                    <input type="radio" name="answer5"value="come">come</lebel>
-                    <div class="radio">
-                      <lebel>
-                        <input type="radio" name="answer5"value="||">||</lebel>
-                        </div>
-        <p><strong>6) how many letters does moringa have?</strong></p>
-        <div class="radio">
-          <lebel>
-            <input type="radio" name="answer6"value="4">3</lebel>
-            <div class="radio">
-              <lebel>
-                <input type="radio" name="answer6"value="7">7</lebel>
-                <div class="radio">
-                  <lebel>
-                    <input type="radio" name="answer6"value="10">10</lebel>
-                    </div>
-      </ol>
-
-
-
-      <button type="submit" id="btn" onclick="">show-score!</button>
-    </form>
+        <div>
+          <label for="email">Enter your gmail acccount:</label><input type="email" id="email" pattern=".+@gmail.com" size="30" required>
+        </div>
     </div>
+
+    <h3>QUESTIONS</h3>
+
+    <form id="quiz-board" method="post" action="">
+      <p>1) what is a mans' best friend?</p>
+      <div>
+        <lebel><input type="radio" name="answer1" value="dog">dog</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer1" value="cat">cat</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer1" value="lion">lion</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer1" value="warthog">warthog</lebel>
+      </div>
+      <p>2) who is king kaka?</p>
+      <div>
+        <lebel><input type="radio" name="answer2" value="an-artist">an-artist</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer2" value="thug">thug</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer2" value="waiter">waiter</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer1" value="Tout">Tout</lebel>
+      </div>
+      <p>3) which conditional statement represents or?</p>
+      <div>
+        <lebel><input type="radio" name="answer3" value="===">===</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer3" value="!==">!==</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer3" value="||">||</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer3" value="and">and</lebel>
+      </div>
+      <p>4) inside hich element do we pu the javascript?</p>
+      <div>
+        <lebel><input type="radio" name="answer4" value="js">js</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer4" value="script">script</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer4" value="scripting">scripting</lebel>
+      </div>
+
+      <p>5) how do we call an ID?</p>
+      <div>
+        <lebel><input type="radio" name="answer5" value="#">#</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer5" value=".">.</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer5" value="come">come</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer5" value="||">||</lebel>
+      </div>
+      <p>6) how many letters does moringa have?</p>
+      <div>
+        <lebel><input type="radio" name="answer6" value="4">4</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer6" value="7">7</lebel>
+      </div>
+      <div>
+        <lebel><input type="radio" name="answer6" value="10">10</lebel>
+      </div>
+
+      <button type="submit" id="btn">submit</button>
+    </form>
+    <div id="after submit">
+    <p id="totalResult">your score is</p>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </div>
+
 </body>
 
 </html>
