@@ -61,6 +61,12 @@
 
 $(document).ready(function() {
   $("form#quiz-board").submit(function(event) {
+    // if (answerOne === undefined || answerTwo === undefined || answerThree === undefined || answerFour === undefined || answerFive === undefined) {
+    //  $('#unattemptedQuestions').text('Please attempt all questions.');
+    //  $('#unattemptedQuestions').fadeOut(10000);
+//   }
+  // else
+    //{
 
     var answer1 = $("input:radio[name=answer1]:checked").val();
     var answer2 = $("input:radio[name=answer2]:checked").val();
@@ -77,4 +83,5 @@ $(document).ready(function() {
       $("#totalResult").toggle();
       event.preventDefault();
   });
+//}
 });
