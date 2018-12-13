@@ -3,11 +3,14 @@
 
 # **BDD**
 
--Require user to enter personal information ie email address, name and class.
+|BEHAVIOUR        | input       | output      |
+|display questions|check answers|display score|
+
+<!-- -Require user to enter personal information ie email address, name and class.
 
 -Enable user answer questions.
 
--Display score.
+-Display score. -->
 
 
 # **INSTALLATION**
