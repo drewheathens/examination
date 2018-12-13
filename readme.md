@@ -3,7 +3,8 @@
 
 # **BDD**
 
-|BEHAVIOUR        | input       | output      |
+|# *BEHAVIOUR*        | #*input*       | #*output*      |
+|-----------------|-------------|-------------|
 |display questions|check answers|display score|
 
 <!-- -Require user to enter personal information ie email address, name and class.
