@@ -3,7 +3,7 @@
 
 # **BDD**
 
-|# *BEHAVIOUR*        | # *input*       | # *output*      |
+| *BEHAVIOUR*        |  *INPUT*       |  *OUTPUT*      |
 |-----------------|-------------|-------------|
 |display questions|check answers|display score|
 
